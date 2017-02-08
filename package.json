@@ -1,0 +1,25 @@
+{
+  "name": "a11y-simulated-dialog-vanilla-js",
+  "version": "1.0.0",
+  "description": "Demo of an accessible simulated dialog (modal) in vanilla JS.",
+  "author": "Mat Janson Blanchet <mat.jb@jansensan.net> (http://jansensan.net)",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://jansensan@github.com/jansensan/a11y-simulated-dialog-vanilla-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jansensan/a11y-simulated-dialog-vanilla-js/issues"
+  },
+  "homepage": "https://github.com/jansensan/a11y-simulated-dialog-vanilla-js#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "signals": "^1.0.0"
+  }
+}
