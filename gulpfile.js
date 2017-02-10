@@ -17,6 +17,7 @@ function compile() {
   runSequence(
     'build:vendors',
     'build:app',
-    'styles'
+    'styles',
+    'webserver'
   );
 }

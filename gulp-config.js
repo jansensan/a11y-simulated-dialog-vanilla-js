@@ -27,6 +27,15 @@ module.exports = function () {
       },
       dest: destDir + 'scripts'
     },
+    server: {
+      src: destDir,
+      options: {
+        host: 'localhost',
+        port: 8080,
+        directoryListing: false,
+        open: true
+      }
+    },
     styles: {
       src: srcStylesDir + 'main.scss',
       dest: destDir + 'styles'

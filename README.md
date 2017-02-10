@@ -36,8 +36,8 @@ Once you checked out this project, run this command in a Terminal window:
 
 ### Testing locally
 
-0. Run this command in a Terminal window: `gulp compile`
-0. Open the file `www/index.html` in a browser.
+0. Run this command in a Terminal window: `gulp compile`.
+0. A browser will open a new page and display the compiled sources.
 
 
 ## Presentation Slides
