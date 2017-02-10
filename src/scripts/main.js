@@ -4,7 +4,7 @@
 
   // vars
   var _inlineModalButton = null;
-  var _modalButton = null
+  var _modalButton = null;
 
   // auto initialization
   init();
