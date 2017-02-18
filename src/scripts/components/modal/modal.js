@@ -4,8 +4,13 @@
 
   // vars
   var _element = null;
+  var _cancelButton = null;
+  var _acceptButton = null;
+  var _closeButton = null;
+
   var _firstElement = null;
   var _lastElement = null;
+
   var _activeElement = null;
 
   // auto initialization
@@ -15,12 +20,17 @@
   function init() {
     // dom elements
     _element = document.getElementById('modal');
-    _firstElement = document.getElementById('modalCancelButton');
-    _lastElement = document.getElementById('modalCloseButton');
+    _cancelButton = document.getElementById('modalCancelButton');
+    _acceptButton = document.getElementById('modalAcceptButton');
+    _closeButton = document.getElementById('modalCloseButton');
+
+    _firstElement = _acceptButton;
+    _lastElement = _closeButton;
+
     _activeElement = null;
 
     // event/signals handlers
-    _lastElement.addEventListener('click', onCloseButtonClicked);
+    _closeButton.addEventListener('click', onCloseButtonClicked);
     document.addEventListener('keydown', onKeyPressed);
     ModalModel.dismissalRequested.add(onDismissalRequested);
     ModalModel.displayRequested.add(onDisplayRequested);
@@ -75,8 +85,8 @@
         event.preventDefault();
         event.stopPropagation();
         _element.focus();
-
-      } else if (_activeElement === _element) {
+      }
+      if (_activeElement === _element) {
         event.preventDefault();
         event.stopPropagation();
         _lastElement.focus();
