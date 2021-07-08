@@ -28,7 +28,7 @@ p {
 }
 
 a {
-  color: $brightColor;
+  color: $main;
 
   &:active,
   &:hover {
@@ -62,7 +62,7 @@ a {
   background-color: transparent;
   text-decoration: underline;
   font-size: 12pt;
-  color: $brightColor;
+  color: $main;
   cursor: pointer;
 
   &:active,
@@ -72,5 +72,5 @@ a {
 }
 
 :focus {
-  outline: 2px solid $brightColor;
+  outline: 2px solid $main;
 }
