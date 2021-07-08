@@ -8,12 +8,12 @@ requireDir('./tasks', {recurse: true});
 
 
 // tasks definitions
-gulp.task('default', ['compile']);
-gulp.task('compile', compile);
+gulp.task('default', ['build']);
+gulp.task('build', build);
 
 
 // methods definitions
-function compile() {
+function build() {
   runSequence(
     'build:vendors',
     'build:app',

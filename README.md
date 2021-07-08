@@ -24,20 +24,21 @@ This project is tested with NVDA on a Windows 10 environment.
 Ensure you install these modules globally:
 
 - [Node](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
 - [Gulp](http://gulpjs.com/)
 
 
-### Installation
+### Install Dependencies
 
 Once you checked out this project, run this command in a Terminal window:
 
-    npm install
+    yarn
 
 
-### Testing locally
+### Testing Locally
 
-0. Run this command in a Terminal window: `gulp compile`.
-0. A browser will open a new page and display the compiled sources.
+1. Run this command in a Terminal window: `yarn build`.
+2. A browser will open a new page and display the compiled sources.
 
 
 ## Presentation Slides
